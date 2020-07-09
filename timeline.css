@@ -1,40 +1,41 @@
 /* Timeline */
-.body__path-timeline {
+.body__timeline {
     margin-top: 20px;
     margin-left: 110px;
     background-color: rgba(0, 0, 0, 0.05);
     border-left: 4px solid #01579B;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
+    border-radius: 4px;
     position: relative;
-    padding: 50px;
+    padding: 25px 50px;
     list-style: none;
     text-align: left;
+    max-height: 765px;
 }
 
-.body__path-timeline-event {
-    margin-bottom: 50px;
+.body__timeline-event {
+    margin-bottom: 25px;
     position: relative;
 }
 
-.body__path-timeline-event:last-of-type {
+.body__timeline-event:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-.body__path-timeline-event:before,
-.body__path-timeline-event:after {
+.body__timeline-event:before,
+.body__timeline-event:after {
     position: absolute;
     display: block;
     top: 0;
+    font-size: 14px;
 }
 
-.body__path-timeline-event:before {
+.body__timeline-event:before {
     left: -160px;
     content: attr(data-dates);
 }
 
-.body__path-timeline-event:after {
+.body__timeline-event:after {
     box-shadow: 0 0 0 4px #01579B;
     left: -57.85px;
     background: white;
@@ -45,45 +46,46 @@
     top: 5px;
 }
 
-.body__path-timeline-event-headline {
+.body__timeline-event-headline {
 
 }
 
-.body__path-timeline-event-headline-title {
+.body__timeline-event-headline-title {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.body__path-timeline-event-headline-title-icon {
+.body__timeline-event-headline-title-icon {
     min-width: 20px;
 }
 
-.body__path-timeline-event-headline-title-name {
-    font-size: 22px;
+.body__timeline-event-headline-title-name {
     margin-left: 15px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-.body__path-timeline-event-title-job {
+.body__timeline-event-title-job {
     margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 15px;
     font-style: italic;
 }
 
-.body__path-timeline-event-detail {
-    /*margin-left: 40px;*/
-    line-height: 1.5;
+.body__timeline-event-detail {
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: justify;
 }
 
-/*.body__path-timeline-event-details {*/
+/*.body__timeline-event-details {*/
 /*    margin-top: 20px;*/
 /*}*/
 
-/*.body__path-timeline-event-details-point {*/
+/*.body__timeline-event-details-point {*/
 /*    margin-top: 10px;*/
 /*}*/
 
-/*.body__path-timeline-event-details-point:first-of-type {*/
+/*.body__timeline-event-details-point:first-of-type {*/
 /*    margin-top: 0;*/
 /*}*/

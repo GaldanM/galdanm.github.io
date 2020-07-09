@@ -32,67 +32,71 @@ i.fa-map-marker-alt {
 
 .container {
     background-color: white;
-    /*max-width: 1024px;*/
-    /*margin: 100px auto;*/
-    /*padding: 20px;*/
+    max-height: 1090px;
+    max-width: 765px;
+    margin: auto;
+    padding: 20px;
 }
 
 .header {
     display: flex;
+    flex-direction: column;
+}
+
+.header__main {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.header__photo {
+.header__main-photo {
+    margin-left: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 250px;
 }
 
-.header__photo-img {
-    width: 146px;
+.header__main-photo-img {
+    width: 126px;
     border: solid 2px #01579B;
     border-radius: 50%;
 }
 
-.header__whois {
+.header__main-whois {
     display: flex;
     flex-direction: column;
 }
 
-.header__whois-name {
+.header__main-whois-name {
     color: #01579B;
     font-size: 30px;
     text-align: right;
 }
 
-.header__whois-title {
+.header__main-whois-title {
     margin-top: 15px;
     font-size: 18px;
     text-align: right;
 }
 
-.body {
-    margin-top: 30px;
-    display: flex;
-}
 
-.body__details {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-}
-
-.body__details-info {
+.header__details {
+    padding: 0 60px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.body__details-info:not(:first-child) {
-    margin-top: 30px;
+.header__details-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.body__details-info-icon {
+.header__details-info-icon {
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -101,18 +105,19 @@ i.fa-map-marker-alt {
     margin-right: 5px;
 }
 
-.body__details-info-text {
+.header__details-info-text {
     min-height: 20px;
+    font-size: 14px;
 }
 
-.body__path {
-    margin-left: 50px;
-    width: 100%;
+.body {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-.body__path-title {
-    font-size: 30px;
+.body__title {
+    font-size: 22px;
 }
